@@ -1,11 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@feltcoop/eslint-config': ^0.2.1
   '@sveltejs/adapter-auto': next
   '@sveltejs/kit': next
-  '@typescript-eslint/eslint-plugin': ^5.27.0
-  '@typescript-eslint/parser': ^5.27.0
-  eslint: ^8.16.0
+  '@typescript-eslint/eslint-plugin': ^5.40.0
+  '@typescript-eslint/parser': ^5.40.0
+  eslint: ^8.25.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^4.0.0
   prettier: ^2.6.2
@@ -18,6 +19,7 @@ specifiers:
   vite: ^3.1.0
 
 devDependencies:
+  '@feltcoop/eslint-config': 0.2.1_vgwtildudkhv2ouvcs3yb7zeyi
   '@sveltejs/adapter-auto': 1.0.0-next.83
   '@sveltejs/kit': 1.0.0-next.516_svelte@3.52.0+vite@3.1.8
   '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
@@ -73,6 +75,23 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@feltcoop/eslint-config/0.2.1_vgwtildudkhv2ouvcs3yb7zeyi:
+    resolution: {integrity: sha512-XqEu9dvaEz7sR3luxpdG4tgR/Sm6L8DYD4SQnUqrQ4lto6Lv7agDdTDRLrKlbGH4lWMLKvwdW/1dDJckFPkoiQ==}
+    engines: {node: '>= 16.6'}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': '>=5'
+      '@typescript-eslint/parser': '>=5'
+      eslint: '>=8'
+      eslint-plugin-svelte3: '>=3'
+      typescript: '>=4.7'
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.40.0_25sstg4uu2sk4pm7xcyzuov7xq
+      '@typescript-eslint/parser': 5.40.0_z4bbprzjrhnsfa24uvmcbu7f5q
+      eslint: 8.25.0
+      eslint-plugin-svelte3: 4.0.0_2h6d4ngklmojchucosx7yvuw7m
+      typescript: 4.8.4
     dev: true
 
   /@humanwhocodes/config-array/0.10.7:

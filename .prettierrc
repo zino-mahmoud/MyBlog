@@ -7,8 +7,8 @@
 	"pluginSearchDirs": ["."],
 	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }],
 	"semi": true,
-	"svelteSortOrder": "markup-options-scripts-styles",
+	"svelteSortOrder": "scripts-markup-options-styles",
 	"svelteStrictMode": false,
 	"svelteAllowShorthand": false,
-	"svelteIndentScriptAndStyle": false
+	"svelteIndentScriptAndStyle": true
 }

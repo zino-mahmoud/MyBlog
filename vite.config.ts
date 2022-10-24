@@ -12,10 +12,10 @@ const config: UserConfig = {
 			resolve: {
 				alias: {
 					$lib: fileURLToPath(new URL('./src/lib', import.meta.url)),
-				}
-			}
-		}
-	}
+				},
+			},
+		},
+	},
 };
 
 export default config;

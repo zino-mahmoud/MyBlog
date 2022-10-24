@@ -6,5 +6,5 @@
 </script>
 
 <Hst.Story>
-	<TestComponents/>
+	<TestComponents />
 </Hst.Story>

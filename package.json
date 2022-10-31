@@ -15,7 +15,8 @@
 		"test:coverage": "vitest run --coverage",
 		"story:dev": "histoire dev",
 		"story:build": "histoire build",
-		"story:preview": "histoire preview"
+		"story:preview": "histoire preview",
+		"cypress:open": "cypress open"
 	},
 	"devDependencies": {
 		"@histoire/plugin-svelte": "^0.11.5",

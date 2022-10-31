@@ -15,6 +15,12 @@ const config: UserConfig = {
 				},
 			},
 		},
+		backgroundPresets: [
+			{
+				label: 'Accent',
+				color: '#1C4F9C'
+			}
+		]
 	},
 };
 

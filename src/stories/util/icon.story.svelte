@@ -1,37 +1,27 @@
 <script lang="ts">
 	import type { Hst } from '@histoire/plugin-svelte';
-	import Icon from '$lib/util/icon.svelte';
-	import { IconPath } from '$lib/../enums/iconPath';
-	import { Color } from '$lib/../enums/color';
+	import Icon from '$lib/components/util/icon.svelte';
+	import { IconData } from '$lib/models/iconPath';
 
 	export let Hst: Hst;
-	let size = 48
 
-	let iconPath = IconPath.HOUSE
-	let iconOptions: { label: string; value: string; }[] = []
-	Object.keys(IconPath).forEach((key, index) => {
+	let size = 32;
+
+	let iconData = IconData.HOUSE;
+	let iconOptions: { label: string; value: string }[] = [];
+	Object.keys(IconData).forEach((key, index) => {
 		iconOptions.push({
 			label: key,
-			value: Object.values(IconPath)[index]
-		})
-	})
-
-	let color = Color.PRIMARY
-	let colorOptions: { label: string; value: string; }[] = []
-	Object.keys(Color).forEach((key, index) => {
-		colorOptions.push({
-			label: key,
-			value: Object.values(Color)[index]
-		})
-	})
+			value: Object.values(IconData)[index].path,
+		});
+	});
 </script>
 
 <Hst.Story title="util/Icon">
 	<svelte:fragment slot="controls">
 		<Hst.Number bind:value={size} title="Size" />
-		<Hst.Select bind:value={iconPath} title="IconPath" options={iconOptions}/>
-		<Hst.Select bind:value={color} title="IconPath" options={colorOptions}/>
+		<Hst.Select bind:value={iconData.path} title="IconPath" options={iconOptions} />
 	</svelte:fragment>
 
-	<Icon size={size} iconPath={iconPath} color={color}/>
+	<Icon size={size} iconData={iconData} />
 </Hst.Story>

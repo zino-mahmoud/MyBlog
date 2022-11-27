@@ -18,9 +18,17 @@ const config: UserConfig = {
 		backgroundPresets: [
 			{
 				label: 'Accent',
-				color: '#1C4F9C'
-			}
-		]
+				color: '#1C4F9C',
+			},
+			{
+				label: 'Secondary',
+				color: '#212936',
+			},
+			{
+				label: 'Primary',
+				color: '#10141A',
+			},
+		],
 	},
 };
 

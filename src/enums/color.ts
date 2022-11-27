@@ -1,4 +1,6 @@
 export enum Color {
-    PRIMARY = 'primary',
-    ACCENT = 'accent'
+	PRIMARY = 'primary',
+	ACCENT = 'accent',
+	WHITE = 'white',
+	COMP = 'comp',
 }
